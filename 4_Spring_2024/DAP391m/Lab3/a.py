@@ -1,0 +1,3 @@
+def grown_rate(data: pd.DataFrame, city: str, year_first, year_last) -> tuple:
+    return city, (data[(data['Khu vực'] == city) & (data['Năm'] == year_last)]['Dân số trung bình (Nghìn người)'].values[0] - data[(data['City'] == city) & (data['Year'] == year_first)]['Dân số trung bình (Nghìn người)'].values[0])/(years[-1] - years[0])
+sorted_grown_rate = sorted([grown_rate(df, i, years[0], years[-1]) for i in areas], reverse=True, key=lambda x: x[1])

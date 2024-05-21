@@ -1,0 +1,199 @@
+ 88M	./4_Spring_2024/AIL301m/assigment/pretrained_model
+6.9M	./4_Spring_2024/AIL301m/assigment/positive/test/happy
+3.2M	./4_Spring_2024/AIL301m/assigment/positive/test/surprise
+4.8M	./4_Spring_2024/AIL301m/assigment/positive/test/neutral
+ 15M	./4_Spring_2024/AIL301m/assigment/positive/test
+ 27M	./4_Spring_2024/AIL301m/assigment/positive/train/happy
+ 12M	./4_Spring_2024/AIL301m/assigment/positive/train/surprise
+ 17M	./4_Spring_2024/AIL301m/assigment/positive/train/neutral
+ 55M	./4_Spring_2024/AIL301m/assigment/positive/train
+ 70M	./4_Spring_2024/AIL301m/assigment/positive
+283M	./4_Spring_2024/AIL301m/assigment/saved_model
+  0B	./4_Spring_2024/AIL301m/assigment/demo_images
+169M	./4_Spring_2024/AIL301m/assigment/checkpoints
+4.9M	./4_Spring_2024/AIL301m/assigment/negative/test/sad
+3.9M	./4_Spring_2024/AIL301m/assigment/negative/test/fear
+3.7M	./4_Spring_2024/AIL301m/assigment/negative/test/angry
+364K	./4_Spring_2024/AIL301m/assigment/negative/test/disgust
+ 13M	./4_Spring_2024/AIL301m/assigment/negative/test
+ 18M	./4_Spring_2024/AIL301m/assigment/negative/train/sad
+9.9M	./4_Spring_2024/AIL301m/assigment/negative/train/fear
+ 11M	./4_Spring_2024/AIL301m/assigment/negative/train/angry
+8.3M	./4_Spring_2024/AIL301m/assigment/negative/train/disgust
+ 48M	./4_Spring_2024/AIL301m/assigment/negative/train
+ 60M	./4_Spring_2024/AIL301m/assigment/negative
+2.4M	./4_Spring_2024/AIL301m/assigment/output/test/sad
+2.0M	./4_Spring_2024/AIL301m/assigment/output/test/fear
+1.9M	./4_Spring_2024/AIL301m/assigment/output/test/angry
+180K	./4_Spring_2024/AIL301m/assigment/output/test/disgust
+6.4M	./4_Spring_2024/AIL301m/assigment/output/test
+ 18M	./4_Spring_2024/AIL301m/assigment/output/train/sad
+9.9M	./4_Spring_2024/AIL301m/assigment/output/train/fear
+ 11M	./4_Spring_2024/AIL301m/assigment/output/train/angry
+8.3M	./4_Spring_2024/AIL301m/assigment/output/train/disgust
+ 48M	./4_Spring_2024/AIL301m/assigment/output/train
+2.4M	./4_Spring_2024/AIL301m/assigment/output/val/sad
+2.0M	./4_Spring_2024/AIL301m/assigment/output/val/fear
+1.9M	./4_Spring_2024/AIL301m/assigment/output/val/angry
+184K	./4_Spring_2024/AIL301m/assigment/output/val/disgust
+6.5M	./4_Spring_2024/AIL301m/assigment/output/val
+ 60M	./4_Spring_2024/AIL301m/assigment/output
+6.9M	./4_Spring_2024/AIL301m/assigment/FER13/test/happy
+4.9M	./4_Spring_2024/AIL301m/assigment/FER13/test/sad
+3.9M	./4_Spring_2024/AIL301m/assigment/FER13/test/fear
+3.2M	./4_Spring_2024/AIL301m/assigment/FER13/test/surprise
+4.8M	./4_Spring_2024/AIL301m/assigment/FER13/test/neutral
+3.7M	./4_Spring_2024/AIL301m/assigment/FER13/test/angry
+364K	./4_Spring_2024/AIL301m/assigment/FER13/test/disgust
+ 28M	./4_Spring_2024/AIL301m/assigment/FER13/test
+ 27M	./4_Spring_2024/AIL301m/assigment/FER13/train/happy
+ 18M	./4_Spring_2024/AIL301m/assigment/FER13/train/sad
+9.9M	./4_Spring_2024/AIL301m/assigment/FER13/train/fear
+ 12M	./4_Spring_2024/AIL301m/assigment/FER13/train/surprise
+ 17M	./4_Spring_2024/AIL301m/assigment/FER13/train/neutral
+ 11M	./4_Spring_2024/AIL301m/assigment/FER13/train/angry
+8.3M	./4_Spring_2024/AIL301m/assigment/FER13/train/disgust
+103M	./4_Spring_2024/AIL301m/assigment/FER13/train
+131M	./4_Spring_2024/AIL301m/assigment/FER13
+863M	./4_Spring_2024/AIL301m/assigment
+106M	./4_Spring_2024/AIL301m/data/pothole/potholes
+ 91M	./4_Spring_2024/AIL301m/data/pothole/normal
+197M	./4_Spring_2024/AIL301m/data/pothole
+197M	./4_Spring_2024/AIL301m/data
+1.0G	./4_Spring_2024/AIL301m
+ 18M	./4_Spring_2024/CPV301/Lab1
+ 53M	./4_Spring_2024/CPV301/Lab6
+332M	./4_Spring_2024/CPV301/Assigment_PE
+ 19M	./4_Spring_2024/CPV301/Lab2
+ 30M	./4_Spring_2024/CPV301/Lab3
+ 16M	./4_Spring_2024/CPV301/Lab4
+ 31M	./4_Spring_2024/CPV301/Lab78
+498M	./4_Spring_2024/CPV301
+ 84K	./4_Spring_2024/DAP391m/database
+144K	./4_Spring_2024/DAP391m/Lab1
+ 12K	./4_Spring_2024/DAP391m/assignment/source/__pycache__
+ 28K	./4_Spring_2024/DAP391m/assignment/source
+4.0K	./4_Spring_2024/DAP391m/assignment/numphy/__pycache__
+8.0K	./4_Spring_2024/DAP391m/assignment/numphy
+ 31M	./4_Spring_2024/DAP391m/assignment/data/edge-servers
+294M	./4_Spring_2024/DAP391m/assignment/data/users
+436K	./4_Spring_2024/DAP391m/assignment/data/doc/assets
+436K	./4_Spring_2024/DAP391m/assignment/data/doc
+325M	./4_Spring_2024/DAP391m/assignment/data
+334M	./4_Spring_2024/DAP391m/assignment
+2.8M	./4_Spring_2024/DAP391m/Lab2
+1.1M	./4_Spring_2024/DAP391m/Lab3
+338M	./4_Spring_2024/DAP391m
+1.9G	./4_Spring_2024
+8.0K	./2_Summer_2023/DBI202
+ 24K	./2_Summer_2023/CSD203/LinkedList
+ 12K	./2_Summer_2023/CSD203/Queue
+4.0K	./2_Summer_2023/CSD203/Stack
+  0B	./2_Summer_2023/CSD203/SE183969_LeDinhNguyen_CSD203/Run
+8.0K	./2_Summer_2023/CSD203/SE183969_LeDinhNguyen_CSD203/Src
+8.0K	./2_Summer_2023/CSD203/SE183969_LeDinhNguyen_CSD203
+308K	./2_Summer_2023/CSD203
+316K	./2_Summer_2023
+8.0K	./1_Spring_2023/PFP191/Demo/SE183969
+8.0K	./1_Spring_2023/PFP191/Demo/.idea/inspectionProfiles
+ 28K	./1_Spring_2023/PFP191/Demo/.idea
+ 48K	./1_Spring_2023/PFP191/Demo
+8.0K	./1_Spring_2023/PFP191/Slot14/.idea/inspectionProfiles
+ 28K	./1_Spring_2023/PFP191/Slot14/.idea
+ 44K	./1_Spring_2023/PFP191/Slot14
+8.0K	./1_Spring_2023/PFP191/Slot13/.idea/inspectionProfiles
+ 28K	./1_Spring_2023/PFP191/Slot13/.idea
+ 56K	./1_Spring_2023/PFP191/Slot13
+8.0K	./1_Spring_2023/PFP191/Slot12/.idea/inspectionProfiles
+ 28K	./1_Spring_2023/PFP191/Slot12/.idea
+ 44K	./1_Spring_2023/PFP191/Slot12
+8.0K	./1_Spring_2023/PFP191/Slot06/function
+4.0K	./1_Spring_2023/PFP191/Slot06/.idea/inspectionProfiles
+4.0K	./1_Spring_2023/PFP191/Slot06/.idea/codeStyles
+ 24K	./1_Spring_2023/PFP191/Slot06/.idea
+ 40K	./1_Spring_2023/PFP191/Slot06
+8.0K	./1_Spring_2023/PFP191/Slot08/.idea/inspectionProfiles
+ 24K	./1_Spring_2023/PFP191/Slot08/.idea
+ 28K	./1_Spring_2023/PFP191/Slot08
+ 32K	./1_Spring_2023/PFP191/Slot09
+8.0K	./1_Spring_2023/PFP191/Slot07/.idea/inspectionProfiles
+ 24K	./1_Spring_2023/PFP191/Slot07/.idea
+ 36K	./1_Spring_2023/PFP191/Slot07
+8.0K	./1_Spring_2023/PFP191/Homework/Slot3
+ 24K	./1_Spring_2023/PFP191/Homework/Slot4
+ 32K	./1_Spring_2023/PFP191/Homework
+8.0K	./1_Spring_2023/PFP191/Slot10/.idea/inspectionProfiles
+ 28K	./1_Spring_2023/PFP191/Slot10/.idea
+ 32K	./1_Spring_2023/PFP191/Slot10
+8.0K	./1_Spring_2023/PFP191/Slot17/.idea/inspectionProfiles
+ 28K	./1_Spring_2023/PFP191/Slot17/.idea
+ 40K	./1_Spring_2023/PFP191/Slot17
+8.0K	./1_Spring_2023/PFP191/Slot16/.idea/inspectionProfiles
+ 28K	./1_Spring_2023/PFP191/Slot16/.idea
+ 56K	./1_Spring_2023/PFP191/Slot16
+8.0K	./1_Spring_2023/PFP191/Slot11/.idea/inspectionProfiles
+ 28K	./1_Spring_2023/PFP191/Slot11/.idea
+ 48K	./1_Spring_2023/PFP191/Slot11
+832K	./1_Spring_2023/PFP191/Exam/ExamPDF
+4.0K	./1_Spring_2023/PFP191/Exam/QUIZ
+ 28K	./1_Spring_2023/PFP191/Exam/ProgressTest
+ 20K	./1_Spring_2023/PFP191/Exam/PractialExam/De1
+ 24K	./1_Spring_2023/PFP191/Exam/PractialExam/SE183969
+ 16K	./1_Spring_2023/PFP191/Exam/PractialExam/De2
+ 20K	./1_Spring_2023/PFP191/Exam/PractialExam/De3
+8.0K	./1_Spring_2023/PFP191/Exam/PractialExam/.idea/inspectionProfiles
+ 28K	./1_Spring_2023/PFP191/Exam/PractialExam/.idea
+124K	./1_Spring_2023/PFP191/Exam/PractialExam
+ 12K	./1_Spring_2023/PFP191/Exam/Sample
+ 16K	./1_Spring_2023/PFP191/Exam/Assigment1/DeA
+ 16K	./1_Spring_2023/PFP191/Exam/Assigment1/SE183969
+ 16K	./1_Spring_2023/PFP191/Exam/Assigment1/DeB
+8.0K	./1_Spring_2023/PFP191/Exam/Assigment1/.idea/inspectionProfiles
+ 32K	./1_Spring_2023/PFP191/Exam/Assigment1/.idea
+ 88K	./1_Spring_2023/PFP191/Exam/Assigment1
+1.1M	./1_Spring_2023/PFP191/Exam
+4.0K	./1_Spring_2023/PFP191/Slot05/.idea/inspectionProfiles
+ 20K	./1_Spring_2023/PFP191/Slot05/.idea
+ 40K	./1_Spring_2023/PFP191/Slot05
+4.0K	./1_Spring_2023/PFP191/Slot04/.idea/inspectionProfiles
+ 20K	./1_Spring_2023/PFP191/Slot04/.idea
+ 40K	./1_Spring_2023/PFP191/Slot04
+4.0K	./1_Spring_2023/PFP191/Slot03/.idea/inspectionProfiles
+ 20K	./1_Spring_2023/PFP191/Slot03/.idea
+ 40K	./1_Spring_2023/PFP191/Slot03
+8.0K	./1_Spring_2023/PFP191/.idea/inspectionProfiles
+ 28K	./1_Spring_2023/PFP191/.idea
+1.7M	./1_Spring_2023/PFP191
+1.7M	./1_Spring_2023
+ 60M	./5_Summer_2024/DSR/Slides_Part1
+624K	./5_Summer_2024/DSR/code/Slot2
+4.0K	./5_Summer_2024/DSR/code/Slot3
+8.0K	./5_Summer_2024/DSR/code/.ipynb_checkpoints
+180K	./5_Summer_2024/DSR/code/Slot1
+828K	./5_Summer_2024/DSR/code
+119M	./5_Summer_2024/DSR
+2.5M	./5_Summer_2024/DPL/Course 1/W2A2/images
+3.0M	./5_Summer_2024/DPL/Course 1/W2A2/datasets
+ 12K	./5_Summer_2024/DPL/Course 1/W2A2/__pycache__
+ 76K	./5_Summer_2024/DPL/Course 1/W2A2/.ipynb_checkpoints
+5.8M	./5_Summer_2024/DPL/Course 1/W2A2
+916K	./5_Summer_2024/DPL/Course 1/W2A1/images
+ 20K	./5_Summer_2024/DPL/Course 1/W2A1/__pycache__
+ 48K	./5_Summer_2024/DPL/Course 1/W2A1/.ipynb_checkpoints
+1.0M	./5_Summer_2024/DPL/Course 1/W2A1
+4.0K	./5_Summer_2024/DPL/Course 1/.ipynb_checkpoints
+6.8M	./5_Summer_2024/DPL/Course 1
+6.8M	./5_Summer_2024/DPL
+126M	./5_Summer_2024
+2.7M	./3_Fall_2023/ADY201m/Assignment
+224K	./3_Fall_2023/ADY201m/Lab3
+344K	./3_Fall_2023/ADY201m/Lab4
+288K	./3_Fall_2023/ADY201m/Lab1&2
+3.0M	./3_Fall_2023/ADY201m/Certification
+6.5M	./3_Fall_2023/ADY201m
+4.0K	./3_Fall_2023/MAI391/2_PCA_SVM
+968K	./3_Fall_2023/MAI391/1_SVD/image
+1.5M	./3_Fall_2023/MAI391/1_SVD
+1.5M	./3_Fall_2023/MAI391
+8.1M	./3_Fall_2023
+2.0G	.

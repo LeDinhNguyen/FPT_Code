@@ -1,0 +1,65 @@
+# Ignore model checkpoints
+*.ckpt
+*.h5
+*.pth
+*.pt
+*.weights
+*.keras
+
+# Ignore images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+
+# Ignore pretrained models
+pretrained_model/
+pretrained_models/
+
+# Ignore weights
+weights/
+*.weights
+
+# Ignore .dat files
+*.dat
+
+# Ignore video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+
+# Ignore the data folder
+data/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment folders
+venv/
+env/
+.virtualenv/
+.venv/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.zip
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
