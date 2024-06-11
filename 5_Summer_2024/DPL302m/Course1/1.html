@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>1.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="outline">Outline</h1>
+<p><a href="#numpy-basics">NumPy Basics</a></p>
+<ul>
+<li><a href="#building-basic-functions-with-numpy">Building basic functions with numpy</a>
+<ul>
+<li><a href="#sigmoid-function-npexp">Sigmoid function, <code>np.exp()</code></a>
+<ul>
+<li><a href="#exercise-2---basic_sigmoid">Exercise 2 - basic_sigmoid</a></li>
+<li><a href="#exercise-3---sigmoid">Exercise 3 - sigmoid</a></li>
+</ul>
+</li>
+<li><a href="#sigmoid-gradient">Sigmoid Gradient</a>
+<ul>
+<li><a href="#exercise-4---sigmoid_derivative">Exercise 4 - Sigmoid_derivative</a></li>
+</ul>
+</li>
+<li><a href="#reshaping-arrays">Reshaping arrays</a>
+<ul>
+<li><a href="#exercise-5---image2vector">Exercise 5 - <code>image2vector()</code></a></li>
+</ul>
+</li>
+<li><a href="#normalizing-rows">Normalizing rows</a>
+<ul>
+<li><a href="#exercise-6---normalize_rows">Exercise 6 - normalize_rows</a></li>
+<li><a href="#exercise-7---softmax">Exercise 7 - softmax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="numpy-basics">NumPy Basics</h1>
+<p><a name="#numpy-basics"></a></p>
+<h2 id="building-basic-functions-with-numpy">Building basic functions with numpy</h2>
+<p><a name="#building-basic-functions-with-numpy"></a></p>
+<h3 id="sigmoid-function-npexp">Sigmoid function, <code>np.exp()</code></h3>
+<p><a name="sigmoid-function-npexp"></a>
+<strong>Exercise 2 - basic_sigmoid</strong>
+<a name="exercise-2---basic_sigmoid"></a></p>
+<p>Goal: Implement the sigmoid function using <code>math.exp()</code></p>
+<p>Sigmoid function: $σ(x) = \frac{1}{1+e^{(-x)}}$
+1
+Implementation with <code>math.exp()</code>: suitable for real number inputs, example implementation has been provided.</p>
+<p>For example, testing with an input of <code>1</code>, the expected result is approximately <code>0.731</code></p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">basic_sigmoid</span><span class="hljs-params">(x)</span>:</span>
+    <span class="hljs-string">"""
+    Compute sigmoid of x.
+
+    Arguments:
+    x -- A scalar
+
+    Return:
+    s -- sigmoid(x)
+    """</span>
+    s = <span class="hljs-number">1</span> / (<span class="hljs-number">1</span> + math.exp(-x))
+
+    <span class="hljs-keyword">return</span> s
+</div></code></pre>
+<p><strong>Exercise 3 - sigmoid</strong>
+<a name="exercise-3---sigmoid"></a></p>
+<p>Goal: Implement the sigmoid function using <code>numpy.exp()</code> to apply to real numbers, vectors and matrices.</p>
+<p>Suitable for both real numbers, vectors and matrices</p>
+<p>Check with vector <code>[1 2 3]</code>, the result is the array of corresponding sigmoid values.
+=&gt; “numpy” is flexible and efficient for numerical operations, especially networks and matrices.</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sigmoid</span><span class="hljs-params">(x)</span>:</span>
+    <span class="hljs-string">"""
+    Compute the sigmoid of x
+
+    Arguments:
+    x -- A scalar or numpy array of any size
+
+    Return:
+    s -- sigmoid(x)
+    """</span>
+
+    s = <span class="hljs-number">1</span> / (<span class="hljs-number">1</span> + np.exp(-x))
+
+    <span class="hljs-keyword">return</span> s
+</div></code></pre>
+<h3 id="sigmoid-gradient">Sigmoid Gradient</h3>
+<p><a name="sigmoid-gradient"></a></p>
+<p><strong>Exercise 4 - Sigmoid_deravative</strong>
+<a name="exercise-4---sigmoid_derivative"></a></p>
+<p>Optimizing the loss function using backpropagation requires calculating the gradient of the functions. The sigmoid function is one of the functions and its gradient calculation is important in adjusting the model's weights.</p>
+<p>Objective: Implement the gradient calculation function of the sigmoid function using <code>numpy</code></p>
+<p>Gradient of sigmoid $σ'(x) =σ(x)(1-σ(x))$</p>
+<p>Check with vector <code>[1 2 3]</code>, the result is the array of corresponding gradient values.</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sigmoid_derivative</span><span class="hljs-params">(x)</span>:</span>
+    <span class="hljs-string">"""
+    Compute the gradient (also called the slope or derivative) of the sigmoid function with respect to its input x.
+    You can store the output of the sigmoid function into variables and then use it to calculate the gradient.
+
+    Arguments:
+    x -- A scalar or numpy array
+
+    Return:
+    ds -- Your computed gradient.
+    """</span>
+
+    s = <span class="hljs-number">1</span> / (<span class="hljs-number">1</span> + np.exp(-x))
+    ds = s * (<span class="hljs-number">1</span> - s)
+
+    <span class="hljs-keyword">return</span> ds
+</div></code></pre>
+<h3 id="reshaping-arrays">Reshaping arrays</h3>
+<p><a name="reshaping-arrays"></a></p>
+<p><strong>Exercise 5 - <code>image2vector()</code></strong>
+<a name="exercise-5---image2vector"></a></p>
+<p><code>image2vector()</code> converts a numpy3D array into a 1D vector</p>
+<pre class="hljs"><code><div>image.reshape((image.shape[<span class="hljs-number">0</span>] * image.shape[<span class="hljs-number">1</span>] * image.shape[<span class="hljs-number">2</span>], <span class="hljs-number">1</span>))
+</div></code></pre>
+<p>converts the 3D array into a 1D vector of size <code>(length*height*depth,1)</code></p>
+<p>Using <code>reshape(-1, 1)</code> can help simplify the code, where <code>-1</code> automatically calculates the size needed to keep the same number of elements.</p>
+<p>Example: Given a 3D array t_image of size <code>(3,3,2)</code>, the conversion will return a vector of size <code>(18,1)</code></p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">image2vector</span><span class="hljs-params">(image)</span>:</span>
+    <span class="hljs-string">"""
+    Argument:
+    image -- a numpy array of shape (length, height, depth)
+
+    Returns:
+    v -- a vector of shape (length*height*depth, 1)
+    """</span>
+
+    length, height, depth = image.shape
+    v = np.reshape(image, (length*height*depth, <span class="hljs-number">1</span>))
+
+    <span class="hljs-keyword">return</span> v
+</div></code></pre>
+<h3 id="normalizing-rows">Normalizing rows</h3>
+<p><a name="normalizing-rows"></a></p>
+<p><strong>Exercise 6 - normalize_rows</strong>
+<a name="exercise-6---normalize_rows"></a></p>
+<p>Normalization leads to better performance because gradient descent converges faster after normalization. Normalize each row vector of matrix x into a unit vector (with length equal to 1).</p>
+<p>Use <code>np.linalg.norm</code> to calculate the quadratic norm of each row.</p>
+<p>$\frac{x}{x_{norm}}$ divides each element in x's row by that row's corresponding norm. This turns each row into a unit vector.</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">normalize_rows</span><span class="hljs-params">(x)</span>:</span>
+    <span class="hljs-string">"""
+    Implement a function that normalizes each row of the matrix x (to have unit length).
+
+    Argument:
+    x -- A numpy matrix of shape (n, m)
+
+    Returns:
+    x -- The normalized (by row) numpy matrix. You are allowed to modify x.
+    """</span>
+
+    x_norm = np.linalg.norm(x, ord=<span class="hljs-number">2</span>, axis=<span class="hljs-number">1</span>, keepdims=<span class="hljs-literal">True</span>)
+    x = x / x_norm
+
+    <span class="hljs-keyword">return</span> x
+</div></code></pre>
+<p><strong>Exercise 7 - softmax</strong>
+<a name="exercise-7---softmax"></a></p>
+<p>The softmax function converts a vector of values ​​into a probability distribution. Each value in the output vector is between 0 and 1, and the sum of all values ​​is 1.</p>
+<p>The <code>np.exp()</code> function is applied to each element of the matrix X, the result is the exponential value of the corresponding element in X</p>
+<p><code>np.sum()</code> sums each row.</p>
+<p>$\frac{x_{exp}}{x_{sum}}$ uses numpy's broadcasting to divide each element of $x_{exp}$ by the corresponding row total in $x_{sum}$.</p>
+<p>For example: <code>[9 2 5 0 0][7 5 0 0 0]</code></p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">softmax</span><span class="hljs-params">(x)</span>:</span>
+    <span class="hljs-string">"""Calculates the softmax for each row of the input x.
+
+    Your code should work for a row vector and also for matrices of shape (m,n).
+
+    Argument:
+    x -- A numpy matrix of shape (m,n)
+
+    Returns:
+    s -- A numpy matrix equal to the softmax of x, of shape (m,n)
+    """</span>
+
+    x_exp = np.exp(x)
+    x_sum = np.sum(x_exp, axis=<span class="hljs-number">1</span>, keepdims=<span class="hljs-literal">True</span>)
+    s = x_exp / x_sum
+
+    <span class="hljs-keyword">return</span> s
+</div></code></pre>
+<h2 id="vectorization">Vectorization</h2>
+<h3 id="implement-the-l1-and-l2-loss-functions">Implement the L1 and L2 loss functions</h3>
+<p><strong>Exercise 8 - L1</strong></p>
+<p>$L_1(\hat{y}, y) = \sum_{i=0}^{m-1}|y^{(i)} - \hat{y}^{(i)}|$</p>
+<p>np.abs() calculates the absolute difference between each pair of predicted and actual values</p>
+<p>Sum the absolute differences to obtain the L1 loss value</p>
+<p>For example: <code>y = [0.9 0.2 0.1 0.4 0.9]</code>, <code>y = ]1 0 0 1 1]</code>, result $L_1$ = 1.1</p>
+<p>=&gt; Used to evaluate model performance and adjust model parameters in machine learning problems.</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">L1</span><span class="hljs-params">(yhat, y)</span>:</span>
+    <span class="hljs-string">"""
+    Arguments:
+    yhat -- vector of size m (predicted labels)
+    y -- vector of size m (true labels)
+
+    Returns:
+    loss -- the value of the L1 loss function defined above
+    """</span>
+
+    loss = np.sum(np.abs(y-yhat))
+
+    <span class="hljs-keyword">return</span> loss
+</div></code></pre>
+<p><strong>Exercise 9 - L2</strong></p>
+<p>L2 calculates the sum of the squares of the difference between the model's prediction and the actual value.</p>
+<p>$L_2(\hat{y},y) = \sum_{i=0}^{m-1}(y^{(i)} - \hat{y}^{(i)})^2$</p>
+<p>For example: <code>y = [0.9 0.2 0.1 0.4 0.9]</code>, <code>y = [1 0 0 1 1]</code>, result $L_2$ = 0.43</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">L2</span><span class="hljs-params">(yhat, y)</span>:</span>
+    <span class="hljs-string">"""
+    Arguments:
+    yhat -- vector of size m (predicted labels)
+    y -- vector of size m (true labels)
+
+    Returns:
+    loss -- the value of the L2 loss function defined above
+    """</span>
+
+    loss = np.sum(np.square(y-yhat))
+
+    <span class="hljs-keyword">return</span> loss
+</div></code></pre>
+
+</body>
+</html>
